@@ -1,0 +1,18 @@
+{
+    "KPlugin": {
+ "Id": "FocusLock",
+ "Name": "Focus Lock",
+        "Description": "Enforces restricted window switching, whitelist window config, configurable amount of allowed switches per set timeframe, and configurable recharge time of a single switch out of the set number of max switches.",
+        "Authors": [{"Name": "Harly Walsh"}],
+        "Category": "Window Management",
+        "Version": "1.0",
+    "License": "MIT",
+    "EnabledByDefault": false
+  },
+  "ServiceTypes": ["KWin/Script"],
+  "X-Plasma-API": "javascript",
+  "X-Plasma-MainScript": "code/main.js",
+  "X-KDE-ConfigModule": "kwin/effects/configs/kcm_kwin4_genericscripted",
+  "X-KDE-PluginInfo-Name": "FocusLock",
+  "KPackageStructure": "KWin/Script"
+}

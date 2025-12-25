@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <widget class="QWidget" name="ConfigPage">
+  <layout class="QVBoxLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Focus Lock Settings</string>
+     </property>
+     <layout class="QVBoxLayout">
+      <item>
+       <layout class="QFormLayout">
+        <item row="0" column="0">
+         <widget class="QLabel">
+          <property name="text">
+           <string>Switch Limit:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSpinBox" name="kcfg_switchLimit">
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>50</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel">
+          <property name="text">
+           <string>Regeneration Time:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <layout class="QHBoxLayout">
+          <item>
+           <widget class="QSpinBox" name="kcfg_regenerationMinutes">
+            <property name="suffix">
+             <string> min</string>
+            </property>
+            <property name="minimum">
+             <number>0</number>
+            </property>
+            <property name="maximum">
+             <number>60</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="kcfg_regenerationSeconds">
+            <property name="suffix">
+             <string> sec</string>
+            </property>
+            <property name="minimum">
+             <number>0</number>
+            </property>
+            <property name="maximum">
+             <number>59</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel">
+          <property name="text">
+           <string>Whitelist:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="kcfg_whitelist">
+          <property name="toolTip">
+           <string>Comma-separated list (e.g., konsole, dolphin, vivaldi)</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+</ui>
